@@ -11,7 +11,7 @@ Usage examples (short commands):
   python scan_and_report.sh          (cron-able wrapper)
 """
 
-import argparse, json, os, re, sys, time, textwrap
+import argparse, fnmatch, json, os, re, sys, time, textwrap
 import requests
 from pathlib import Path
 from datetime import datetime
@@ -130,8 +130,43 @@ def extract_excerpt(text, match_start, match_end, radius=150):
     return f"{marker}{snippet}{marker_end}"
 
 
+
+def load_dummy_filters():
+    """Load known dummy/test key filters from dummy_filters.json"""
+    import json, os as _os
+    _p = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "dummy_filters.json")
+    try:
+        with open(_p) as _f:
+            return json.load(_f)
+    except Exception:
+        return {"test_file_patterns": [], "known_dummy_keys": {}, "known_test_headers": {}}
+
+
+def _is_test_dummy(matched_value, file_path, dummy_data):
+    """Return True if the finding looks like a dummy/test key — skip it."""
+    # 1) file path pattern
+    for pat in dummy_data.get("test_file_patterns", []):
+        if fnmatch.fnmatch(file_path, pat) or fnmatch.fnmatch(file_path, "/" + pat.lstrip("/")):
+            return True
+    # 2) known dummy key hash-lookup (store hashes in file to avoid GitHub SCS false flags)
+    import hashlib as _hlib
+    sha = f"sha256:{_hlib.sha256(matched_value.encode()).hexdigest()}"
+    if sha in dummy_data.get("known_dummy_key_hashes", {}):
+        return True
+    # 3) JWT standard test header
+    jwt_part = matched_value.split(".")[1] + "." if matched_value.count(".") == 2 else ""
+    for hdr in dummy_data.get("known_test_headers", {}):
+        if matched_value.startswith(hdr) or (jwt_part and jwt_part.startswith(hdr + ".")):
+            return True
+    # 4) non-credential junk/test vector
+    for _pat in dummy_data.get("non_credential_patterns", []):
+        if re.fullmatch(_pat, matched_value):
+            return True
+    return False
+
+
 def scan_repo(repo_slug_label, batch_repos, patterns, headers, search_requests_counter,
-               max_pages=1, max_findings=10):
+               max_pages=1, max_findings=10, dummy_data=None):
     """Scan a batch of repos using multi-repo OR queries for speed.
 
     Args:
@@ -148,6 +183,7 @@ def scan_repo(repo_slug_label, batch_repos, patterns, headers, search_requests_c
 
     repo_findings = []
     seen_hashes   = set()
+    dummy_data = load_dummy_filters() if dummy_data is None else dummy_data
     # Build multi-repo query clause: repo:A repo:B ...
     repo_clause = " ".join(f"repo:{r}" for r in batch_repos)
 
@@ -238,6 +274,9 @@ def scan_repo(repo_slug_label, batch_repos, patterns, headers, search_requests_c
 
                     lineno = file_text[:m.start()].count("\n") + 1
                     excerpt = extract_excerpt(file_text, m.start(), m.end())
+                    # ── Dummy/key filter: skip test vectors, example keys, non-exploitable
+                    if _is_test_dummy(m.group(0), path, dummy_data):
+                        continue
                     repo_findings.append({
                         "repo": item_repo, "repo_url": html, "raw_url": raw_url,
                         "file": path, "line": lineno, "excerpt": excerpt,

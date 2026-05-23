@@ -1,0 +1,47 @@
+{
+  "test_file_patterns": [
+    "*_test.go",
+    "test_*",
+    "*_test.*",
+    "fixtures/*",
+    "examples/*",
+    "example/*",
+    "mock_*",
+    "stub_*",
+    "fake_*",
+    "dummy_*",
+    "sample_*",
+    "sandbox_*",
+    "*_fixture.*",
+    "*_example.*",
+    "*_fixtures/*",
+    "*_examples/*",
+    "tests/",
+    "__mocks__/",
+    "testdata/",
+    "testing/"
+  ],
+  "known_dummy_key_hashes": {
+    "sha256:1a5d44a2dca19669d72edf4c4f1c27c4c1ca4b4408fbb17f6ce4ad452d78ddb3": "AWS documented example",
+    "sha256:c6ea27c534f993d31f0aef882e3d200e7b87470c379ae79c8f9b19d3bd363dc9": "AWS docs example 2",
+    "sha256:78314b11be2e581549ac1c4f616563fad3fdf0c3b71678f6e2299182080e0598": "AWS example secret",
+    "sha256:1021ad463a161d69de63ef74566407b9ed012deb6d9306a4bc7183544c84350c": "Google API example",
+    "sha256:38f868fb72b0939df8590c1773a61ea1bd58e47eaa24a52f07a5ccb88cb56e36": "Google OAuth test vector",
+    "sha256:5bc22b287bb5ffe7e4b4054485f72fce45147ace77c94b094b1757984fc243d6": "base64 hello world payload",
+    "sha256:2cafc0970149a84f3b9e62eaf169f36f59907a3b3e31f7b82e68c69cd27f7326": "Stripe test",
+    "sha256:c4341ce2cfcb5209124439c61efbae3ceb5d10b48997f67face25578db0918a2": "Stripe test restricted",
+    "sha256:45b8000d5beb6d037f29a3d05f842b94a3b84a2c6cbf698321b74b2c8504af93": "SendGrid example",
+    "sha256:b43887592143ae8e18b3a6e9faafcb38a7901eb784632f1266ba9fb2cd82c2c5": "Slack example",
+    "sha256:5e40cfb8df9657f80e2f293e5cb04e1900c058b513481ca99ccb72acc87ec73a": "Slack user example",
+    "sha256:3222c348ad165772e57c166d839bdc88c69040ffbf6a3352cc55e7192759c79d": "google/osv-scalibr test vector"
+  },
+  "known_test_headers": [
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+    "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9",
+    "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9"
+  ],
+  "non_credential_patterns": [
+    "32r923jr023rk320rk2a3rkB34",
+    "[A-D][A-D][A-D][0-9][Q-Z][A-D][0-9][Q-Z][A-D][Q-Z][A-D][0-9][Q-Z][kK][A-D][0-9][Q-Z]"
+  ]
+}

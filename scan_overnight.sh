@@ -58,6 +58,7 @@ for batch_file in $(ls "$BATCH_DIR"/batch_*.txt 2>/dev/null | sort); do
       python3 -u "$H1_REPORTER" "$REPORT" --output "$H1_OUT" 2>&1 | tee -a "$LOGFILE"
       echo "[$(date -u +%H:%M)] [$bn] H1 report → $H1_OUT" | tee -a "$LOGFILE"
     fi
+    bash "$SCRIPT_DIR/sync_findings.sh" 2>&1 | tee -a "$LOGFILE" || true
   else
     echo "[$(date -u +%H:%M)] [$bn] No report file — likely rate-limited or skipped." | tee -a "$LOGFILE"
   fi

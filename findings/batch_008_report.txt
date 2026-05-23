@@ -1,0 +1,38 @@
+======================================================================
+  GITHUB SECRET SCANNER — SUMMARY REPORT
+  Generated: 2026-05-23 05:35:31 UTC
+======================================================================
+
+  Total repos scanned:    1
+  Total findings:          2
+    HIGH:   2
+    MEDIUM: 0
+    LOW:    0
+
+----------------------------------------------------------------------
+  PER-ORG FINDING COUNT
+  Org                             Total  HIGH   MED   LOW
+----------------------------------------------------------------------
+  google                              2     2           0
+
+======================================================================
+  ORG: google
+======================================================================
+
+  [HIGH] AWS Access Key ID
+    Repo:   google/osv-scalibr
+    File:   veles/secrets/awsaccesskey/detector_test.go
+    Line:   32
+    URL:    https://github.com/google/osv-scalibr/blob/afc4973a9136afe0b48fd800d52ab612e1f3b876/veles/secrets/awsaccesskey/detector_test.go
+    Evidence: ...m/google/osv-scalibr/veles/velestest" )  func TestDetectorAcceptance(t *testing.T) { 	velestest.AcceptDetector( 		t, 		awsaccesskey.NewDetector(), 		`AKIA1984R439T439HTH4:32r923jr023rk320rk2a3rkB34
+
+  [HIGH] AWS Access Key ID
+    Repo:   google/osv-scalibr
+    File:   veles/secrets/awsaccesskey/detector_test.go
+    Line:   132
+    URL:    https://github.com/google/osv-scalibr/blob/afc4973a9136afe0b48fd800d52ab612e1f3b876/veles/secrets/awsaccesskey/detector_test.go
+    Evidence: ...ltiple_access_ID_and_secret_-_test_proximity", 			input: `config_app1: 			AKIA1984R439T439HTH4 32r923jr023rk320rk2a3rkB34tj340r32Ckt433  config_app2: AKIA1984R439T439HTH3 32r923jr023rk320rk2a3rkB34
+
+======================================================================
+  END OF REPORT
+======================================================================

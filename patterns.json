@@ -1,0 +1,362 @@
+{
+  "aws_access_key_id": {
+    "regex": "AKIA[0-9A-Z]{16}",
+    "hazard": "HIGH",
+    "description": "AWS Access Key ID"
+  },
+  "aws_secret_access_key": {
+    "regex": "(?i)aws(.{0,20})?['\\\"]([A-Za-z0-9/+=]{40})['\\\"]",
+    "hazard": "HIGH",
+    "description": "AWS Secret Access Key"
+  },
+  "aws_session_token": {
+    "regex": "ASIA[0-9A-Z]{16}",
+    "hazard": "HIGH",
+    "description": "AWS Session Token"
+  },
+  "google_api_key": {
+    "regex": "AIza[0-9A-Za-z\\-_]{35}",
+    "hazard": "HIGH",
+    "description": "Google API Key"
+  },
+  "google_oauth_2": {
+    "regex": "[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com",
+    "hazard": "HIGH",
+    "description": "Google OAuth 2.0 Client ID"
+  },
+  "google_cloud_service_account": {
+    "regex": "\"type\": \"service_account\"",
+    "hazard": "HIGH",
+    "description": "Google Cloud Service Account JSON Key"
+  },
+  "github_personal_token": {
+    "regex": "ghp_[0-9a-zA-Z]{36}",
+    "hazard": "HIGH",
+    "description": "GitHub Personal Access Token"
+  },
+  "github_oauth_token": {
+    "regex": "gho_[0-9a-zA-Z]{36}",
+    "hazard": "HIGH",
+    "description": "GitHub OAuth Token"
+  },
+  "github_fine_grained_pat": {
+    "regex": "github_pat_[0-9a-zA-Z_]{82}",
+    "hazard": "HIGH",
+    "description": "GitHub Fine-Grained PAT"
+  },
+  "github_app_token": {
+    "regex": "ghu_[0-9a-zA-Z]{36}",
+    "hazard": "MEDIUM",
+    "description": "GitHub User-to-Server Token"
+  },
+  "github_installation_token": {
+    "regex": "ghs_[0-9a-zA-Z]{36}",
+    "hazard": "HIGH",
+    "description": "GitHub Installation Token"
+  },
+  "github_refresh_token": {
+    "regex": "ghr_[0-9a-zA-Z]{36}",
+    "hazard": "HIGH",
+    "description": "GitHub Refresh Token"
+  },
+  "slack_token": {
+    "regex": "xox[baprs]-[0-9a-zA-Z\\-]{10,72}",
+    "hazard": "HIGH",
+    "description": "Slack Token"
+  },
+  "slack_webhook": {
+    "regex": "https://hooks\\.slack\\.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}",
+    "hazard": "HIGH",
+    "description": "Slack Webhook URL"
+  },
+  "stripe_live_key": {
+    "regex": "sk_live_[0-9a-zA-Z]{24,}",
+    "hazard": "HIGH",
+    "description": "Stripe Live Secret Key"
+  },
+  "stripe_live_publishable": {
+    "regex": "pk_live_[0-9a-zA-Z]{24,}",
+    "hazard": "MEDIUM",
+    "description": "Stripe Live Publishable Key"
+  },
+  "stripe_test_key": {
+    "regex": "sk_test_[0-9a-zA-Z]{24,}",
+    "hazard": "MEDIUM",
+    "description": "Stripe Test Secret Key"
+  },
+  "sendgrid_api_key": {
+    "regex": "SG\\.[0-9A-Za-z\\-_]{22}\\.[0-9A-Za-z\\-_]{43}",
+    "hazard": "HIGH",
+    "description": "SendGrid API Key"
+  },
+  "mailgun_api_key": {
+    "regex": "key-[0-9a-zA-Z]{32}",
+    "hazard": "HIGH",
+    "description": "Mailgun API Key"
+  },
+  "twilio_api_key": {
+    "regex": "SK[0-9a-fA-F]{32}",
+    "hazard": "HIGH",
+    "description": "Twilio API Key / Account SID"
+  },
+  "twilio_account_sid": {
+    "regex": "AC[a-f0-9]{32}",
+    "hazard": "HIGH",
+    "description": "Twilio Account SID"
+  },
+  "heroku_api_key": {
+    "regex": "(?i)heroku(.{0,20})?['\\\"]([0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12})['\\\"]",
+    "hazard": "HIGH",
+    "description": "Heroku API Key"
+  },
+  "heroku_api_key_simple": {
+    "regex": "heroku_[A-Za-z0-9]{25}",
+    "hazard": "HIGH",
+    "description": "Heroku API Key (legacy)"
+  },
+  "cloudflare_api_token": {
+    "regex": "[0-9a-zA-Z\\-_]{40}[A-Fa-f0-9]{8}",
+    "hazard": "HIGH",
+    "description": "Cloudflare API Token / Global API Key"
+  },
+  "cloudflare_api_key": {
+    "regex": "cloudflare_[0-9a-zA-Z\\-_]{32,}",
+    "hazard": "HIGH",
+    "description": "Cloudflare API Key"
+  },
+  "datadog_api_key": {
+    "regex": "[0-9a-f]{32}",
+    "hazard": "MEDIUM",
+    "description": "Datadog API Key (32 hex \u2014 verify it's actually Datadog)"
+  },
+  "newrelic_license_key": {
+    "regex": "NRAK-[A-Z0-9]{27}",
+    "hazard": "HIGH",
+    "description": "New Relic License Key"
+  },
+  "pagerduty_api_key": {
+    "regex": "u\\+[0-9a-f]{32}",
+    "hazard": "HIGH",
+    "description": "PagerDuty API Key"
+  },
+  "mailchimp_api_key": {
+    "regex": "[0-9a-f]{32}-us[0-9]{1,2}",
+    "hazard": "HIGH",
+    "description": "Mailchimp API Key"
+  },
+  "facebook_access_token": {
+    "regex": "EAACEdEose0cBA[0-9A-Za-z]+",
+    "hazard": "HIGH",
+    "description": "Facebook Access Token"
+  },
+  "facebook_oauth": {
+    "regex": "[0-9]{13,16}\\.[0-9a-f]{32}",
+    "hazard": "MEDIUM",
+    "description": "Facebook OAuth (potential token)"
+  },
+  "twitter_bearer_token": {
+    "regex": "Bearer\\s+[A-Za-z0-9%\\-_\\.\\+]+=*",
+    "hazard": "HIGH",
+    "description": "Twitter/X Bearer Token or similar Bearer Auth"
+  },
+  "twitter_api_key": {
+    "regex": "[tT]witter[_\\s][aA]pi[_\\s][kK]ey['\\\"]?\\s*[:=]\\s*['\\\"]?[0-9a-zA-Z]{25,50}",
+    "hazard": "MEDIUM",
+    "description": "Twitter API Key in code"
+  },
+  "authorization_bearer": {
+    "regex": "[Aa]uthorization[_\\s:]+['\\\"]?[Bb]earer\\s+[A-Za-z0-9\\-_\\.\\/\\+]+",
+    "hazard": "HIGH",
+    "description": "Authorization Bearer token (any API)"
+  },
+  "jwt_token": {
+    "regex": "eyJ[A-Za-z0-9\\-_]+\\.eyJ[A-Za-z0-9\\-_]+\\.?[A-Za-z0-9\\-_.\\/+]*",
+    "hazard": "MEDIUM",
+    "description": "JWT / JSON Web Token"
+  },
+  "jwt_weak": {
+    "regex": "eyJ[A-Za-z0-9\\-_]+={0,2}\\.eyJ[A-Za-z0-9\\-_]+={0,2}\\.?[A-Za-z0-9\\-_.\\/+]*={0,2}",
+    "hazard": "MEDIUM",
+    "description": "JWT (may be base64url-encoded)"
+  },
+  "password_in_config": {
+    "regex": "(?i)(password|passwd|pwd|pass)\\s*[:=]\\s*['\\\"][^'\\\"]{4,}['\\\"]",
+    "hazard": "HIGH",
+    "description": "Hard-coded password in config/code"
+  },
+  "secret_key_in_code": {
+    "regex": "(?i)(secret[_\\s-]?key|SECRET[_\\s-]?KEY)\\s*[:=]\\s*['\\\"][^'\\\"]{8,}['\\\"]",
+    "hazard": "HIGH",
+    "description": "Secret Key hard-coded in code"
+  },
+  "api_key_generic": {
+    "regex": "(?i)(api[_-]?key|apikey|API_KEY)\\s*[:=]\\s*['\\\"][a-zA-Z0-9\\-_]{20,}['\\\"]",
+    "hazard": "HIGH",
+    "description": "Generic API Key in code"
+  },
+  "token_generic": {
+    "regex": "(?i)(token|access_token|auth[_-]?token)\\s*[:=]\\s*['\\\"][a-zA-Z0-9\\-_\\.\\/\\+]{20,}['\\\"]",
+    "hazard": "MEDIUM",
+    "description": "Generic Access/Authorization Token"
+  },
+  "database_url": {
+    "regex": "(?i)(DATABASE_URL|database_url|db_connection_string)\\s*[:=]\\s*['\\\"][^'\\\"]{10,}['\\\"]",
+    "hazard": "HIGH",
+    "description": "Hard-coded database connection URL (may contain password)"
+  },
+  "mysql_conn_string": {
+    "regex": "[Mm]ysql://[^\\s'\\\"']{8,}",
+    "hazard": "HIGH",
+    "description": "MySQL connection string (may contain password)"
+  },
+  "postgres_conn_string": {
+    "regex": "[Pp]ostgres(?:ql)?://[^\\s'\\\"']{8,}",
+    "hazard": "HIGH",
+    "description": "PostgreSQL connection string (may contain password)"
+  },
+  "mongodb_conn_string": {
+    "regex": "mongodb(\\+srv)?://[^\\s'\\\"']{8,}",
+    "hazard": "HIGH",
+    "description": "MongoDB connection string"
+  },
+  "redis_url": {
+    "regex": "redis://[^\\s'\\\"']{8,}",
+    "hazard": "HIGH",
+    "description": "Redis URL (may contain password)"
+  },
+  "private_key_rsa": {
+    "regex": "-----BEGIN RSA PRIVATE KEY-----",
+    "hazard": "HIGH",
+    "description": "RSA Private Key"
+  },
+  "private_key_ec": {
+    "regex": "-----BEGIN EC PRIVATE KEY-----",
+    "hazard": "HIGH",
+    "description": "EC Private Key"
+  },
+  "private_key_dsa": {
+    "regex": "-----BEGIN DSA PRIVATE KEY-----",
+    "hazard": "HIGH",
+    "description": "DSA Private Key"
+  },
+  "private_key_openssh": {
+    "regex": "-----BEGIN OPENSSH PRIVATE KEY-----",
+    "hazard": "HIGH",
+    "description": "OpenSSH Private Key"
+  },
+  "private_key_ssh": {
+    "regex": "-----BEGIN SSH2 ENCRYPTED PRIVATE KEY-----",
+    "hazard": "HIGH",
+    "description": "SSH2 Encrypted Private Key"
+  },
+  "pgp_private_key": {
+    "regex": "-----BEGIN PGP PRIVATE KEY BLOCK-----",
+    "hazard": "HIGH",
+    "description": "PGP/GPG Private Key Block"
+  },
+  "netlify_auth": {
+    "regex": "netlify[_-]?token['\\\"]?\\s*[:=]\\s*['\\\"]?[a-zA-Z0-9\\-_]{20,}",
+    "hazard": "HIGH",
+    "description": "Netlify Auth Token"
+  },
+  "vercel_api_token": {
+    "regex": "(?i)vercel[_-]?api[_-]?token['\\\"]?\\s*[:=]\\s*['\\\"]?[a-zA-Z0-9\\-_]{20,}",
+    "hazard": "HIGH",
+    "description": "Vercel API Token"
+  },
+  "npm_token": {
+    "regex": "npm_[0-9A-Za-z]{36}",
+    "hazard": "HIGH",
+    "description": "NPM Access Token"
+  },
+  "pip_password": {
+    "regex": "pip_password\\s*[:=]\\s*['\\\"].+['\\\"]",
+    "hazard": "HIGH",
+    "description": "PyPI/PIP Password"
+  },
+  "jenkins_token": {
+    "regex": "(?i)jenkins[_\\s]?(?:api[_\\s])?token['\\\"]?\\s*[:=]\\s*['\\\"][a-f0-9]{32,}['\\\"]",
+    "hazard": "HIGH",
+    "description": "Jenkins API Token"
+  },
+  "jenkins_password": {
+    "regex": "(?i)jenkins[_\\s]?password['\\\"]?\\s*[:=]\\s*['\\\"][^'\\\"]{4,}['\\\"]",
+    "hazard": "HIGH",
+    "description": "Jenkins Password"
+  },
+  "jdbc_conn_string": {
+    "regex": "jdbc:[a-zA-Z]+://[^\\s'\\\"']{8,}",
+    "hazard": "HIGH",
+    "description": "JDBC Connection String (may contain redshift/aurora/mysql password)"
+  },
+  "aws_sns_key": {
+    "regex": "AKIA[0-9A-Z]{16}",
+    "hazard": "HIGH",
+    "description": "AWS SNS/General Key ID (AKIA prefix is all general AWS keys)"
+  },
+  "high_entropy_string": {
+    "regex": "['\\\"][A-Za-z0-9+/=]{44,}['\\\"]",
+    "hazard": "MEDIUM",
+    "description": "High-entropy base64 string (likely a secret)"
+  },
+  "env_file_exposed": {
+    "regex": "(?i)\\.env\\b",
+    "hazard": "MEDIUM",
+    "description": "Reference to .env file (check if committed)"
+  },
+  "saml_cert": {
+    "regex": "-----BEGIN CERTIFICATE-----[a-zA-Z0-9/\\n+=]-----END CERTIFICATE-----",
+    "hazard": "MEDIUM",
+    "description": "SAML / X.509 Certificate"
+  },
+  "okta_token": {
+    "regex": "00[a-zA-Z0-9_-]{40}~[a-zA-Z0-9_-]{16}",
+    "hazard": "HIGH",
+    "description": "Okta Token"
+  },
+  "aws_mws_token": {
+    "regex": "amzn\\.mws\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}",
+    "hazard": "HIGH",
+    "description": "Amazon MWS Auth Token"
+  },
+  "square_access_token": {
+    "regex": "sq0atp-[0-9A-Za-z\\-_]{22}",
+    "hazard": "HIGH",
+    "description": "Square Access Token"
+  },
+  "square_oauth_secret": {
+    "regex": "sq0csp-[0-9A-Za-z\\-_]{43}",
+    "hazard": "HIGH",
+    "description": "Square OAuth Secret"
+  },
+  "paypal_braintree_token": {
+    "regex": "access_token\\$production\\$[0-9a-z]{16}\\$[0-9a-f]{32}",
+    "hazard": "HIGH",
+    "description": "PayPal Braintree Access Token"
+  },
+  "github_actions_token": {
+    "regex": "GITHUB_TOKEN\\s*[:=]\\s*[a-zA-Z0-9]{36}",
+    "hazard": "HIGH",
+    "description": "GitHub Actions Token in code"
+  },
+  "k8s_token": {
+    "regex": "k8s_[a-zA-Z0-9]{26,}",
+    "hazard": "HIGH",
+    "description": "Kubernetes Token"
+  },
+  "kubernetes_secret_yaml": {
+    "regex": "kind:\\s*Secret",
+    "hazard": "HIGH",
+    "description": "Kubernetes Secret YAML (may contain base64-encoded creds)"
+  },
+  "eval_or_exec_secret": {
+    "regex": "['\\\"]?eval\\s*\\(\\s*base64_decode",
+    "hazard": "HIGH",
+    "description": "Potential shellcode via eval(base64_decode)"
+  },
+  "oauth_client_secret": {
+    "regex": "(?i)(oauth[_-]?client[_-]?secret)\\s*[:=]\\s*['\\\"][a-zA-Z0-9\\-_]{8,}['\\\"]",
+    "hazard": "HIGH",
+    "description": "OAuth Client Secret in code"
+  }
+}

@@ -1,0 +1,368 @@
+[INFO] Loaded 72 secret patterns
+[INFO] Patterns: aws_access_key_id, aws_secret_access_key, aws_session_token, google_api_key, google_oauth_2 ... (+67 more)
+[INFO] Scanning 500 repo(s) with 72 patterns
+
+   [RATE-LIMIT] Search: 30/30 remaining (reset at 1779514930)
+[INFO] Scanning with ALL 72 patterns (full + slow)
+[BATCHES] 500 repos -> 50 batches x 10 repos/query    3600 search requests | ~390min @ 6.5s/q
+
+[Batch 1/50] repos: ['google/.github', 'google/AFL', 'google/ARC-GEN', 'google/CommonLoopUtils', 'google/EarlGrey', 'google/GTMAppAuth', 'google/GoogleSignIn-iOS', 'google/REAPER', 'google/RED', 'google/TensorNetwork']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/.github … google/TensorNetwork
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 2/50] repos: ['google/TestParameterInjector', 'google/UIforETW', 'google/aaos-sdv-telemetry-mcg', 'google/aaos-sdv-telemetry-simulator', 'google/aarch64-esr-decoder', 'google/aarch64-paging', 'google/active-learning', 'google/addlicense', 'google/ads-api-report-fetcher', 'google/ads_oneshop']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/TestParameterInjector … google/ads_oneshop
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 3/50] repos: ['google/agent-shell-tools', 'google/agera', 'google/agi', 'google/ai-abap-assistant-sample', 'google/aistplusplus_api', 'google/aiyprojects-raspbian', 'google/alioth', 'google/allocation-instrumenter', 'google/amber', 'google/android-arscblamer']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/agent-shell-tools … google/android-arscblamer
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 4/50] repos: ['google/android-classyshark', 'google/android-emulator-container-scripts', 'google/android-emulator-hypervisor-driver', 'google/android-riscv64', 'google/anonymous-tokens', 'google/app-check', 'google/applied-data-structures-algorithms', 'google/applied-machine-learning-intensive', 'google/archat', 'google/aside']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/android-classyshark … google/aside
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 5/50] repos: ['google/async-request-dispatcher-rs', 'google/aura-inspector', 'google/autocxx', 'google/automotive-design-compose', 'google/battery-historian', 'google/bbr', 'google/bespoke', 'google/bgu', 'google/binnavi', 'google/bottery']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/async-request-dispatcher-rs … google/bottery
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 6/50] repos: ['google/brain_autorl', 'google/btree', 'google/budoux-extension', 'google/bughunters', 'google/bundletool', 'google/caliper', 'google/cameratrapai', 'google/cameraview', 'google/capillary', 'google/capirca']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/brain_autorl … google/capirca
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 7/50] repos: ['google/capsicum-linux', 'google/capslock', 'google/capture-thread', 'google/cc-device-plugin', 'google/cdc-file-transfer', 'google/cdep', 'google/charts', 'google/chicago-brick', 'google/chrome-ssh-agent', 'google/civics_cdf_validator']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/capsicum-linux … google/civics_cdf_validator
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 8/50] repos: ['google/cld3', 'google/clerk', 'google/closure-compiler-js', 'google/closure-net', 'google/cloud-android-orchestration', 'google/cloud-forensics-utils', 'google/cluster-data', 'google/clusterfuzzlite', 'google/cmockery', 'google/coapblaster']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/cld3 … google/coapblaster
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 9/50] repos: ['google/codeu_coding_assessment_b_2017', 'google/codeu_project_2017', 'google/coding-competitions-archive', 'google/coding-with-chrome', 'google/command-fds', 'google/conscrypt', 'google/coset', 'google/cpu_features', 'google/cql', 'google/crfs']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/codeu_coding_assessment_b_2017 … google/crfs
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 10/50] repos: ['google/cronet-transport-for-okhttp', 'google/csp-evaluator', 'google/cwisstable', 'google/deck', 'google/deepconsensus', 'google/deeppolisher', 'google/deepsomatic', 'google/deepvariant', 'google/desugar_jdk_libs', 'google/devlibrary']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/cronet-transport-for-okhttp … google/devlibrary
+======================================================================
+[WAIT] Rate-limited. Sleeping 55s...
+[OK] No secrets in this batch
+
+[Batch 11/50] repos: ['google/dfdewey', 'google/dfiq', 'google/differential-privacy', 'google/distributed_point_functions', 'google/docsy', 'google/dotprompt', 'google/double-conversion', 'google/dreambooth', 'google/drjax', 'google/dtoolkit']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/dfdewey … google/dtoolkit
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 12/50] repos: ['google/dwh-migration-tools', 'google/dynamic-video-depth', 'google/dynamicworld', 'google/e3d_lstm', 'google/earthengine-api', 'google/ebpf-transport-monitoring', 'google/eddystone', 'google/ehr-predictions', 'google/elemental2', 'google/eleventy-high-performance-blog']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/dwh-migration-tools … google/eleventy-high-performance-blog
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 13/50] repos: ['google/embardiment', 'google/emboss', 'google/emoji-segmenter', 'google/end-to-end', 'google/enjarify', 'google/escapevelocity', 'google/eslint-config-google', 'google/etc2comp', 'google/ever', 'google/evojax']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/embardiment … google/evojax
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 14/50] repos: ['google/executor.nvim', 'google/exposure-notifications-android', 'google/exposure-notifications-server', 'google/facade', 'google/fhir-py', 'google/fiddle', 'google/filonov', 'google/firing-range', 'google/flatui', 'google/flaxformer']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/executor.nvim … google/flaxformer
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 15/50] repos: ['google/fleetbench', 'google/fleetspeak', 'google/flexbox-layout', 'google/flogger', 'google/flutter-desktop-embedding', 'google/flutter-mediapipe', 'google/forest-data-partnership', 'google/forma', 'google/fscrypt', 'google/fully-homomorphic-encryption']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/fleetbench … google/fully-homomorphic-encryption
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 16/50] repos: ['google/fuzzbench', 'google/fuzzer-test-suite', 'google/fuzzing', 'google/gapid', 'google/garf', 'google/gasket-driver', 'google/gce-tcb-verifier', 'google/gcm', 'google/gemma-unity-plugin', 'google/gemmlowp']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/fuzzbench … google/gemmlowp
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 17/50] repos: ['google/genc', 'google/gfxstream', 'google/ghc-source-gen', 'google/ghost-kernel', 'google/gif-for-cli', 'google/git-appraise-web', 'google/git-pull-request-mirror', 'google/github-sandbox', 'google/github-team', 'google/gitiles']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/genc … google/gitiles
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 18/50] repos: ['google/glance-experimental-tools', 'google/glazier', 'google/globalfoundries-pdk-ip-gf180mcu_fd_ip_sram', 'google/globalfoundries-pdk-libs-gf180mcu_osu_sc', 'google/glog', 'google/glome', 'google/gnostic', 'google/go-configfs-tsm', 'google/go-eventlog', 'google/go-jsonnet']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/glance-experimental-tools … google/go-jsonnet
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 19/50] repos: ['google/go-licenses', 'google/go-querystring', 'google/go-testgen', 'google/go-tpm', 'google/google-api-javascript-client', 'google/google-api-objectivec-client-for-rest', 'google/google-authenticator', 'google/google-authenticator-android', 'google/google-authenticator-libpam', 'google/google-input-tools']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/go-licenses … google/google-input-tools
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 20/50] repos: ['google/googleapis.dart', 'google/googlesql', 'google/gpt-disk-rs', 'google/grafika', 'google/grain', 'google/graph-renderer', 'google/graphicsfuzz', 'google/grr-doc', 'google/grumpy', 'google/gsocguides']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/googleapis.dart … google/gsocguides
+======================================================================
+[WAIT] Rate-limited. Sleeping 56s...
+[OK] No secrets in this batch
+
+[Batch 21/50] repos: ['google/gtm-oauth2', 'google/gtm-session-fetcher', 'google/gts', 'google/gulava', 'google/gwpsan', 'google/gxui', 'google/h2e_technical_documentation', 'google/hadal-flow', 'google/hammer-kit', 'google/hdrnet']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/gtm-oauth2 … google/hdrnet
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 22/50] repos: ['google/helpseeking', 'google/hiba', 'google/hierarchical-state-machine.dart', 'google/highwayhash', 'google/honggfuzz', 'google/horologist', 'google/hover', 'google/hrepl', 'google/hypernerf', 'google/if-this-then-ad']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/helpseeking … google/if-this-then-ad
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 23/50] repos: ['google/ihmehimmeli', 'google/import-mailbox-to-gmail', 'google/inception', 'google/init2winit', 'google/ink-stroke-modeler', 'google/intellij-community', 'google/intermock', 'google/it-cert-automation-practice', 'google/java-photoslibrary', 'google/jax-cfd']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/ihmehimmeli … google/jax-cfd
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 24/50] repos: ['google/jaxopt', 'google/jetpack-camera-app', 'google/jimfs', 'google/jni-bind', 'google/jsinterop-annotations', 'google/jsinterop-generator', 'google/json_serializable.dart', 'google/jsonapi', 'google/jsonnet', 'google/jsontoken']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/jaxopt … google/jsontoken
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 25/50] repos: ['google/k8s-digester', 'google/kati', 'google/kctf', 'google/kernel-research', 'google/keytransparency', 'google/kf', 'google/kiosk-app-reference-implementation', 'google/kmsan', 'google/kotlin', 'google/kotlin_convert']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/k8s-digester … google/kotlin_convert
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 26/50] repos: ['google/kube-startup-cpu-boost', 'google/langfun', 'google/libhidtelephony', 'google/libhoth', 'google/liblc3', 'google/libsbc', 'google/libultrahdr', 'google/licensecheck', 'google/lightweight_mmm', 'google/lintush']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/kube-startup-cpu-boost … google/lintush
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 27/50] repos: ['google/lipsync', 'google/liquidfun', 'google/lisp-koans', 'google/litmus', 'google/live-transcribe-speech-engine', 'google/llvm-bazel', 'google/log4jscanner', 'google/logger', 'google/lullaby', 'google/lyra']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/lipsync … google/lyra
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 28/50] repos: ['google/makerspace-auth', 'google/marl', 'google/matched_markets', 'google/mathsteps', 'google/mdbook-i18n-helpers', 'google/mediapy', 'google/merchant-api-samples', 'google/migration-planner', 'google/minijail', 'google/minimalloc']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/makerspace-auth … google/minimalloc
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 29/50] repos: ['google/ml-compiler-opt', 'google/ml-flashpoint', 'google/ml-metadata', 'google/ml-metrics', 'google/ml_collections', 'google/mobly', 'google/mobly-bundled-snippets', 'google/model_search', 'google/modernstorage', 'google/moodle-on-gcp']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/ml-compiler-opt … google/moodle-on-gcp
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 30/50] repos: ['google/mount-zip', 'google/mozc-devices', 'google/mpact-cheriot', 'google/mpact-sim', 'google/mpact-sim-codelabs', 'google/mtail', 'google/music-synthesizer-for-android', 'google/mysql', 'google/mysql-ripple', 'google/namebench']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/mount-zip … google/namebench
+======================================================================
+[WAIT] Rate-limited. Sleeping 58s...
+[OK] No secrets in this batch
+
+[Batch 31/50] repos: ['google/nccl-fastsocket', 'google/neper', 'google/nerfies', 'google/netkat', 'google/netstack', 'google/neural-light-transport', 'google/ngx_brotli', 'google/ngx_token_binding', 'google/ninja-to-soong', 'google/node-fastify-auto-push']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/nccl-fastsocket … google/node-fastify-auto-push
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 32/50] repos: ['google/nogotofail', 'google/note-maps', 'google/nsync', 'google/nucleus', 'google/oauth2l', 'google/omaha', 'google/open-dice', 'google/open-location-code', 'google/opencl-kernel-profiler', 'google/opendocs']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/nogotofail … google/opendocs
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 33/50] repos: ['google/openintent', 'google/oracle-toolkit', 'google/orbit', 'google/osdetector-gradle-plugin', 'google/osqp-cpp', 'google/oss-rebuild', 'google/osv-scanner-action', 'google/pacevolve', 'google/pack', 'google/packetdrill']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/openintent … google/packetdrill
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 34/50] repos: ['google/parallax', 'google/paranoid_crypto', 'google/parse-ego4d', 'google/password-alert', 'google/patents-public-data', 'google/path-auditor', 'google/pathways-job', 'google/paxml', 'google/pcbdl', 'google/pcie_lmt']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/parallax … google/pcie_lmt
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 35/50] repos: ['google/perf_data_converter', 'google/picatrix', 'google/platform_benchmarks', 'google/play-asset-delivery-unity', 'google/play-in-app-reviews-unity', 'google/play-services-plugins', 'google/play-unity-plugins', 'google/playground-elements', 'google/polymorphicDSL', 'google/postcss-rename']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/perf_data_converter … google/postcss-rename
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 36/50] repos: ['google/practical-inverse-rendering-of-textured-and-translucent-appearance', 'google/prettytensor', 'google/private-compute-services', 'google/private-join-and-compute', 'google/project-OCEAN', 'google/project-gameface', 'google/promises', 'google/prompt-encryption-sdk', 'google/prompt-to-prompt', 'google/protobuf-gradle-plugin']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/practical-inverse-rendering-of-textured-and-translucent-appearance … google/protobuf-gradle-plugin
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 37/50] repos: ['google/pseudo-identity-provider', 'google/pthreadpool', 'google/pubmed-rag', 'google/purr', 'google/py-lab-hal', 'google/pybadges', 'google/pyglove', 'google/pyink', 'google/pytype', 'google/qkeras']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/pseudo-identity-provider … google/qkeras
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 38/50] repos: ['google/quahog', 'google/qwix', 'google/rax', 'google/re2-wasm', 'google/react-schemaorg', 'google/recaptcha', 'google/reflectable.dart', 'google/rejoiner', 'google/rekall', 'google/responsive-search-ads-builder']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/quahog … google/responsive-search-ads-builder
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 39/50] repos: ['google/resumable-assert', 'google/retiming', 'google/ringli', 'google/robotstxt', 'google/rrg', 'google/rune', 'google/rust-crate-audits', 'google/rust-derive-fuzztest', 'google/rust_icu', 'google/ruy']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/resumable-assert … google/ruy
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 40/50] repos: ['google/safe-html-types', 'google/safe-mmio', 'google/safebrowsing', 'google/safeopen', 'google/sam', 'google/samba-documents-provider', 'google/sandboxed-api', 'google/santa', 'google/sbsim', 'google/scaaml']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/safe-html-types … google/scaaml
+======================================================================
+[WAIT] Rate-limited. Sleeping 59s...
+[OK] No secrets in this batch
+
+[Batch 41/50] repos: ['google/schema-dts', 'google/season-of-docs', 'google/secrets-gradle-plugin', 'google/secure-aggregation', 'google/security-research-pocs', 'google/sedpack', 'google/seesaw', 'google/seq2seq', 'google/sequence-layers', 'google/sgtm-migrator']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/schema-dts … google/sgtm-migrator
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 42/50] repos: ['google/shenzhen-go', 'google/shuwa', 'google/simhospital', 'google/skylark', 'google/skywater-pdk', 'google/slang-gaussian-rasterization', 'google/sling', 'google/slo-generator', 'google/slothfs', 'google/smali']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/shenzhen-go … google/smali
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 43/50] repos: ['google/snowflake-to-bq-data-transfer-tool', 'google/sommelier-rs', 'google/sparrowhawk', 'google/spatial-media', 'google/splice', 'google/sqlcommenter', 'google/ssl_logger', 'google/starthinker', 'google/startup-os', 'google/stm32-bootloader-client-rs']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/snowflake-to-bq-data-transfer-tool … google/stm32-bootloader-client-rs
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 44/50] repos: ['google/style-aligned', 'google/swift', 'google/swift-benchmark', 'google/symphony-gcp', 'google/sysgraph', 'google/syzygy', 'google/tachometer', 'google/talkback', 'google/tamperchrome', 'google/tcp_killer']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/style-aligned … google/tcp_killer
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 45/50] repos: ['google/temporian', 'google/terminal-app-function-keys', 'google/test-server', 'google/testrun', 'google/textfsm', 'google/tf_mesh_renderer', 'google/tfp-causalimpact', 'google/torchax', 'google/torq', 'google/toucan']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/temporian … google/toucan
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 46/50] repos: ['google/trace-viewer', 'google/traceur-compiler', 'google/tracing-framework', 'google/trajax', 'google/transperf', 'google/trax', 'google/triage-party', 'google/triemap', 'google/trillian-examples', 'google/trillian-website']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/trace-viewer … google/trillian-website
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 47/50] repos: ['google/truth', 'google/tsunami-security-scanner', 'google/tsunami-security-scanner-plugins', 'google/typograms', 'google/ukip', 'google/uncertainty-baselines', 'google/usb-cereal', 'google/usd_from_gltf', 'google/uvq', 'google/valid-avatar-library']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/truth … google/valid-avatar-library
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 48/50] repos: ['google/vanir', 'google/viai-sdk', 'google/vim-codefmt', 'google/vim-maktaba', 'google/vim-searchindex', 'google/visionai', 'google/visualblocks', 'google/vizier', 'google/vogon', 'google/voice-iot-maker-demo']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/vanir … google/voice-iot-maker-demo
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 49/50] repos: ['google/volley', 'google/vulkan-shader-profiler', 'google/vxsig', 'google/walt', 'google/watchface', 'google/weasel', 'google/weather-tools', 'google/web-game-samples', 'google/web-serial-polyfill', 'google/web-starter-kit']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/volley … google/web-starter-kit
+======================================================================
+[OK] No secrets in this batch
+
+[Batch 50/50] repos: ['google/wiberg-minimization', 'google/windtunnel', 'google/wmt-mqm-human-evaluation', 'google/x-amber', 'google/xctestrunner', 'google/xplat', 'google/xtrace', 'google/yapf', 'google/youtube-8m', 'google/zopfli']
+
+======================================================================
+[BATCH SCAN] 10 repos: google/wiberg-minimization … google/zopfli
+======================================================================
+[WAIT] Rate-limited. Sleeping 54s...
+[OK] No secrets in this batch
+
+======================================================================
+[DONE] Repos scanned: 500
+[DONE] Total findings:  0
+[DONE] Reports written: 0
+[INFO] No secrets found — no summary report written.

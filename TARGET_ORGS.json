@@ -1,0 +1,130 @@
+{
+  "cia": {
+    "max_repos": 100,
+    "priority": 1
+  },
+  "fbi": {
+    "max_repos": 100,
+    "priority": 1
+  },
+  "cia-world Factbook": {
+    "max_repos": 50,
+    "priority": 1
+  },
+  "nasa": {
+    "max_repos": 200,
+    "priority": 1
+  },
+  "nsa": {
+    "max_repos": 50,
+    "priority": 1
+  },
+  "GSA": {
+    "max_repos": 200,
+    "priority": 1
+  },
+  "defense": {
+    "max_repos": 100,
+    "priority": 1
+  },
+  "whitehouse": {
+    "max_repos": 50,
+    "priority": 1
+  },
+  "apple": {
+    "max_repos": 500,
+    "priority": 2
+  },
+  "google": {
+    "max_repos": 2900,
+    "priority": 2
+  },
+  "microsoft": {
+    "max_repos": 7900,
+    "priority": 2
+  },
+  "meta": {
+    "max_repos": 100,
+    "priority": 2
+  },
+  "amazon": {
+    "max_repos": 100,
+    "priority": 2
+  },
+  "netflix": {
+    "max_repos": 300,
+    "priority": 2
+  },
+  "openai": {
+    "max_repos": 200,
+    "priority": 2
+  },
+  "jpmorgan": {
+    "max_repos": 100,
+    "priority": 2
+  },
+  "goldmansachs": {
+    "max_repos": 100,
+    "priority": 2
+  },
+  "morganstanley": {
+    "max_repos": 50,
+    "priority": 2
+  },
+  "citibank": {
+    "max_repos": 50,
+    "priority": 2
+  },
+  "twitter": {
+    "max_repos": 200,
+    "priority": 2
+  },
+  "uber": {
+    "max_repos": 200,
+    "priority": 2
+  },
+  "airbnb": {
+    "max_repos": 200,
+    "priority": 2
+  },
+  "spotify": {
+    "max_repos": 200,
+    "priority": 2
+  },
+  "adobe": {
+    "max_repos": 150,
+    "priority": 2
+  },
+  "ibm": {
+    "max_repos": 500,
+    "priority": 2
+  },
+  "oracle": {
+    "max_repos": 300,
+    "priority": 2
+  },
+  "salesforce": {
+    "max_repos": 200,
+    "priority": 2
+  },
+  "vmware": {
+    "max_repos": 200,
+    "priority": 2
+  },
+  "intel": {
+    "max_repos": 100,
+    "priority": 2
+  },
+  "nvidia": {
+    "max_repos": 200,
+    "priority": 2
+  },
+  "amd": {
+    "max_repos": 100,
+    "priority": 2
+  },
+  "qualcomm": {
+    "max_repos": 50,
+    "priority": 2
+  }
+}
